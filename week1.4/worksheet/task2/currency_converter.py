@@ -23,6 +23,7 @@ def currency_converter(amount, from_currency, to_currency):
        return 0.0
     if from_currency == to_currency:
         return round(float(amount), 2)
+   
     rate = conversion_rate[from_currency][to_currency]
     result = amount * rate
     return round(result, 2)
